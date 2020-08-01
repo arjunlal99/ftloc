@@ -1,0 +1,58 @@
+html
+  head
+    script(src="/public/script.js")
+    link(rel="stylesheet" href='/public/style.css')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous")
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Domine')
+    meta(charset='utf-8' content='width=device-width intial-scale=1' name='viewport')
+    title FOR THE LOVE OF CINEMA
+  body
+    div.sidenav.shadow-lg.p-0.mb-0.rounded-0#mySidenav
+      div.row#sidebar-top
+        div.col-10
+          p.sidebar-heading for the love of cinema.
+        div.col-2
+          button.close#sidebar-closebtn(type="button" onclick="closeNav()") &times;
+      p#sidebar-content-heading CONTACT US
+      p.sidebar-content Write to us : arjunlalma@gmail.com
+      p.sidebar-content Follow on Instagram: 
+    div.site-wrapper#main
+      nav.navbar.navbar-expand-sm.sticky-top
+        a.navbar-brand(href="#") for the love of cinema.
+        ul.nav.navbar-nav.ml-auto
+          li.nav-item
+            button.openbtn(onclick="openNav()") ☰
+      div.cover
+        div.container
+          h1#cover-heading FOR THE LOVE OF CINEMA
+      div
+        div.container.position-relative.shadow-lg.p-3.mb-5.bg-white.rounded-0#content-section
+          div
+            p#latest-recomendations LATEST RECOMMENDATIONS
+          p#line
+          ul(style="list-style-type:none;")
+            each docs in obj
+              li  
+                div.article
+                  div.row
+                    div.col-lg-8
+                      div#article-column
+                        h1.article-title= docs.title
+                        h2.article-subheading= docs.sub_heading
+                        p.article-content= docs.author
+                        p.article-content= docs.content
+                    div.col-lg-4.flex-container
+                      div#frames-column
+                          div
+                            img.img-fluid.frame-images(src="/image/" + docs.title + "_1.png")
+                          div
+                            img.img-fluid.frame-images(src="/image/" + docs.title + "_2.png")
+                          div
+                            img.img-fluid.frame-images(src="/image/" + docs.title + "_3.png")
+                          div
+                            img.img-fluid.frame-images(src="/image/" + docs.title + "_4.png")
+              p#line
+      div.container#footer
+        p#footer-title for the love of cinema.
+        p.footerdetails Created by kiduvei.  

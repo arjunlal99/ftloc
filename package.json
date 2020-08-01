@@ -1,0 +1,26 @@
+{
+  "name": "w2w",
+  "version": "1.0.0",
+  "description": "personal blog project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movie",
+    "blog",
+    "personal"
+  ],
+  "author": "Arjunlal M A",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "marko": "^4.22.0",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.23",
+    "pug": "^3.0.0"
+  }
+}

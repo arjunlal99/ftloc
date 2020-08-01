@@ -1,0 +1,275 @@
+ /* The side navigation menu */
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #2b3e42; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidebar-top{
+  background-color: #ff304f;
+  height: 100px;
+}
+
+.sidebar-heading{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2.5vh;
+}
+
+/* Position and style the close button (top right corner) */
+#sidebar-closebtn {
+  right: 25px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+#sidebar-content-heading{
+  color: whitesmoke;
+  font-family: "Montserrat";
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-content{
+  color: white;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s;
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+
+
+///////////////////////////////
+@media (max-width: 768px){
+  .article-title{
+    margin-left: 0px;
+  }
+}
+
+#content-section{
+  background-color: white;
+  margin-top: -20vh;
+  width: 100%;
+}
+
+.cover{
+  margin-top: 0px;
+  height: 80vh;
+  background-color: #ff304f;
+}
+body{
+  background-color: grey;
+}
+
+.navbar{
+  height: 60px;
+}
+
+.navbar-brand{
+  color: white;
+  font-family: "Montserrat";
+  margin-left: 2.5vh;
+}
+
+.navbar-brand:hover{
+  color: white;
+}
+
+.nav-item{
+  color:white;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  margin-right: 2.5vh;
+}
+
+.nav-item:hover{
+  filter: brightness(85%);
+}
+
+.navbar{
+  background: #ff304f;
+}
+
+.openbtn{
+  color: white;
+  background-color: #ff304f;
+  border: none;
+  font-size: x-large;
+}
+
+
+.article{
+  margin-top: 40px;
+}
+
+#article-column{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.article-content{
+  font-family: "Domine";
+  line-height: 1.88;
+  font-weight: 100;
+}
+
+.article-subheading{
+  font-family: "Montserrat";
+
+}
+
+.article-title{
+  font-family: "Montserrat";
+
+  font-weight: bolder;
+}
+
+
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-images{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#frames-column{
+
+}
+
+#cover-heading{
+  color:white;
+  font-size: 7vh;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  padding-top: 20%;
+  padding-bottom: 25%
+  margin-bottom: 40px;
+}
+
+#latest-recomendations{
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: grey;
+  opacity: 60%;
+}
+#line{
+  display:flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#line::after{
+  content: '';
+  flex: 0.1;
+  margin: auto;
+  height: 1px;
+  background-color: grey;
+}
+
+
+#footer{
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-weight: bolder;
+
+  color: grey;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.footer-details{
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#footer-title{
+  text-shadow: 1px 1px 2px grey;
+}
+
+@media screen and (min-width: 769px){
+  #article-column{
+    margin-left: 5vw;
+  }
+  #frames-column{
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 768px){
+  ul{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-brand{
+      margin-left: 0;
+  }
+  .nav-item{
+    margin-right: 0;
+  }
+
+  #cover-heading{
+    padding-top: 50%;
+  }
+
+  .article{
+
+}
